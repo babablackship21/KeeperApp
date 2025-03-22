@@ -1,2 +1,2 @@
 # KeeperApp
-Created with CodeSandbox
+Task management app created with CodeSandbox.
