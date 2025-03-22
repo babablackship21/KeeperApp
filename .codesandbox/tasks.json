@@ -1,0 +1,34 @@
+{
+  "setupTasks": [
+    {
+      "name": "Installing Dependencies",
+      "command": "npm install"
+    },
+    {
+      "name": "Create Symlink",
+      "command": "ln -s $(pwd)/public/styles.css node_modules/styles.css || true"
+    }
+  ],
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "ln -s $(pwd)/public/styles.css node_modules/styles.css || true && npm run start",
+      "runAtStart": true
+    },
+    "build": {
+      "name": "build",
+      "command": "npm run build",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "npm run test",
+      "runAtStart": false
+    },
+    "eject": {
+      "name": "eject",
+      "command": "npm run eject",
+      "runAtStart": false
+    }
+  }
+}
